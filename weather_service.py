@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("WEATHER_API_KEY")
-print("API_KEY loaded:", API_KEY)
 BASE_URL = "http://api.weatherapi.com/v1"
 
 def is_valid_date(input_str):
