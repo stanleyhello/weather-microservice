@@ -1,8 +1,8 @@
 # Weather Microservice (for Wei He)
 
-## 🔌 Communication Contract
+## Communication Contract
 
-### ✉️ How to **Programmatically Request** Data from the Microservice
+### How to **Programmatically Request** Data from the Microservice
 
 Use ZeroMQ REQ socket to send a **single string**:
 
@@ -27,7 +27,7 @@ while True:
 Enter a city name or date (YYYY-MM-DD): san diego
 Response: 66.9 F, Partly Cloudy
 
-### 📡 How to **Receive** Data from the Microservice
+### How to **Receive** Data from the Microservice
 
 After sending a string using ZeroMQ REQ socket, the microservice sends back a **single formatted string**:
 
@@ -60,7 +60,7 @@ Use `recv_string()` to capture the response.
 ![UML Sequence Diagram](uml.png)
 ---
 
-## 🔐 How Your Teammate Should Access the Microservice
+## How To Access the Microservice
 
 **GitHub Repo**: [https://github.com/stanleyhello/weather-microservice](https://github.com/your-username/weather-microservice)
 
