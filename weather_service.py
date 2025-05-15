@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("WEATHER_API_KEY")
 BASE_URL = "http://api.weatherapi.com/v1"
+CITY = "Corvallis"
 
 def is_valid_date(input_str):
     try:
@@ -19,7 +20,7 @@ def get_forecast(date_str):
     try:
         response = requests.get(
             f"{BASE_URL}/forecast.json",
-            params={"key": API_KEY, "q": "Corvallis", "dt": date_str},
+            params={"key": API_KEY, "q": CITY, "dt": date_str},
             headers={"Accept": "application/json"},
             timeout=1.5
         )
